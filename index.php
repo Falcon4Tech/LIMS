@@ -49,7 +49,6 @@
 	$sql_user = "lims_".$_SERVER['REMOTE_USER'];
 	$sql_pass = "dB".$_SERVER['REMOTE_USER']."!#";
 
-	//$mysqli = new log_mysqli('localhost', 'calender', 'call531', 'lims');
 	$mysqli = new log_mysqli('localhost', $sql_user, $sql_pass, 'lims');
 	$mysqli->debug(true, "lims.index");
 	/* check connection */
